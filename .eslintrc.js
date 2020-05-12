@@ -22,5 +22,9 @@ module.exports = {
     'react',
   ],
   rules: {
+    'no-use-before-define': 0,
+    'import/prefer-default-export': 0,
+    'no-restricted-syntax': 0,
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }]
   },
 };

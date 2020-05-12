@@ -1,202 +1,252 @@
 export const kana = {
-  "a": {
-    "row": "none",
-    "column": "a",
-    "hiragana": {
-      "char": "あ",
+  a: {
+    row: 'none',
+    column: 'a',
+    hiragana: {
+      char: 'あ',
     },
-    "katakana": {
-      "char": "ア",
-    }
+    katakana: {
+      char: 'ア',
+    },
   },
-  "i": {
-    "row": "none",
-    "column": "i",
-    "hiragana": {
-      "char": "い",
+  i: {
+    row: 'none',
+    column: 'i',
+    hiragana: {
+      char: 'い',
     },
-    "katakana": {
-      "char": "イ",
-    }
+    katakana: {
+      char: 'イ',
+    },
   },
-  "u": {
-    "row": "none",
-    "column": "u",
-    "hiragana": {
-      "char": "う",
+  u: {
+    row: 'none',
+    column: 'u',
+    hiragana: {
+      char: 'う',
     },
-    "katakana": {
-      "char": "ウ",
-    }
+    katakana: {
+      char: 'ウ',
+    },
   },
-  "e": {
-    "row": "none",
-    "column": "e",
-    "hiragana": {
-      "char": "え",
+  e: {
+    row: 'none',
+    column: 'e',
+    hiragana: {
+      char: 'え',
     },
-    "katakana": {
-      "char": "エ",
-    }
+    katakana: {
+      char: 'エ',
+    },
   },
-  "o": {
-    "row": "none",
-    "column": "o",
-    "hiragana": {
-      "char": "お",
+  o: {
+    row: 'none',
+    column: 'o',
+    hiragana: {
+      char: 'お',
     },
-    "katakana": {
-      "char": "オ",
-    }
+    katakana: {
+      char: 'オ',
+    },
   },
-  "ka": {
-    "row": "k",
-    "column": "a",
-    "hiragana": {
-      "char": "か",
+  ka: {
+    row: 'k',
+    column: 'a',
+    hiragana: {
+      char: 'か',
     },
-    "katakana": {
-      "char": "カ",
-    }
+    katakana: {
+      char: 'カ',
+    },
   },
-  "ki": {
-    "row": "k",
-    "column": "i",
-    "hiragana": {
-      "char": "き",
+  ki: {
+    row: 'k',
+    column: 'i',
+    hiragana: {
+      char: 'き',
     },
-    "katakana": {
-      "char": "キ",
-    }
+    katakana: {
+      char: 'キ',
+    },
   },
-  "ku": {
-    "row": "k",
-    "column": "u",
-    "hiragana": {
-      "char": "く",
+  ku: {
+    row: 'k',
+    column: 'u',
+    hiragana: {
+      char: 'く',
     },
-    "katakana": {
-      "char": "ク",
-    }
+    katakana: {
+      char: 'ク',
+    },
   },
-  "ke": {
-    "row": "k",
-    "column": "e",
-    "hiragana": {
-      "char": "け",
+  ke: {
+    row: 'k',
+    column: 'e',
+    hiragana: {
+      char: 'け',
     },
-    "katakana": {
-      "char": "ケ",
-    }
+    katakana: {
+      char: 'ケ',
+    },
   },
-  "ko": {
-    "row": "k",
-    "column": "o",
-    "hiragana": {
-      "char": "こ",
+  ko: {
+    row: 'k',
+    column: 'o',
+    hiragana: {
+      char: 'こ',
     },
-    "katakana": {
-      "char": "コ",
-    }
+    katakana: {
+      char: 'コ',
+    },
   },
-  "sa": {
-    "row": "s",
-    "column": "a",
-    "hiragana": {
-      "char": "さ",
+  sa: {
+    row: 's',
+    column: 'a',
+    hiragana: {
+      char: 'さ',
     },
-    "katakana": {
-      "char": "サ",
-    }
+    katakana: {
+      char: 'サ',
+    },
   },
-  "shi": {
-    "row": "s",
-    "column": "i",
-    "hiragana": {
-      "char": "し",
+  shi: {
+    row: 's',
+    column: 'i',
+    hiragana: {
+      char: 'し',
     },
-    "katakana": {
-      "char": "シ",
-    }
+    katakana: {
+      char: 'シ',
+    },
   },
-  "su": {
-    "row": "s",
-    "column": "u",
-    "hiragana": {
-      "char": "す",
+  su: {
+    row: 's',
+    column: 'u',
+    hiragana: {
+      char: 'す',
     },
-    "katakana": {
-      "char": "ス",
-    }
+    katakana: {
+      char: 'ス',
+    },
   },
-  "se": {
-    "row": "s",
-    "column": "e",
-    "hiragana": {
-      "char": "せ",
+  se: {
+    row: 's',
+    column: 'e',
+    hiragana: {
+      char: 'せ',
     },
-    "katakana": {
-      "char": "セ",
-    }
-  },  
-  "so": {
-    "row": "s",
-    "column": "o",
-    "hiragana": {
-      "char": "そ",
+    katakana: {
+      char: 'セ',
     },
-    "katakana": {
-      "char": "ソ",
-    }
   },
-  "ta": {
-    "row": "t",
-    "column": "a",
-    "hiragana": {
-      "char": "た",
+  so: {
+    row: 's',
+    column: 'o',
+    hiragana: {
+      char: 'そ',
     },
-    "katakana": {
-      "char": "タ",
-    }
-  },
-  "chi": {
-    "row": "t",
-    "column": "i",
-    "hiragana": {
-      "char": "ち",
+    katakana: {
+      char: 'ソ',
     },
-    "katakana": {
-      "char": "チ",
-    }
   },
-  "tsu": {
-    "row": "t",
-    "column": "u",
-    "hiragana": {
-      "char": "つ",
+  ta: {
+    row: 't',
+    column: 'a',
+    hiragana: {
+      char: 'た',
     },
-    "katakana": {
-      "char": "ツ",
-    }
-  },
-  "te": {
-    "row": "t",
-    "column": "e",
-    "hiragana": {
-      "char": "て",
+    katakana: {
+      char: 'タ',
     },
-    "katakana": {
-      "char": "テ",
-    }
   },
-  "to": {
-    "row": "t",
-    "column": "o",
-    "hiragana": {
-      "char": "と",
+  chi: {
+    row: 't',
+    column: 'i',
+    hiragana: {
+      char: 'ち',
     },
-    "katakana": {
-      "char": "ト",
-    }
+    katakana: {
+      char: 'チ',
+    },
   },
-}
+  tsu: {
+    row: 't',
+    column: 'u',
+    hiragana: {
+      char: 'つ',
+    },
+    katakana: {
+      char: 'ツ',
+    },
+  },
+  te: {
+    row: 't',
+    column: 'e',
+    hiragana: {
+      char: 'て',
+    },
+    katakana: {
+      char: 'テ',
+    },
+  },
+  to: {
+    row: 't',
+    column: 'o',
+    hiragana: {
+      char: 'と',
+    },
+    katakana: {
+      char: 'ト',
+    },
+  },
+  na: {
+    row: 'n',
+    column: 'a',
+    hiragana: {
+      char: 'な',
+    },
+    katakana: {
+      char: 'ナ',
+    },
+  },
+  ni: {
+    row: 'n',
+    column: 'i',
+    hiragana: {
+      char: 'に',
+    },
+    katakana: {
+      char: 'ニ',
+    },
+  },
+  nu: {
+    row: 'n',
+    column: 'u',
+    hiragana: {
+      char: 'ぬ',
+    },
+    katakana: {
+      char: 'ヌ',
+    },
+  },
+  ne: {
+    row: 'n',
+    column: 'e',
+    hiragana: {
+      char: 'ね',
+    },
+    katakana: {
+      char: 'ネ',
+    },
+  },
+  no: {
+    row: 'n',
+    column: 'o',
+    hiragana: {
+      char: 'の',
+    },
+    katakana: {
+      char: 'ノ',
+    },
+  },
+};
