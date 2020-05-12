@@ -1,14 +1,12 @@
-import * as React from 'react'
+import * as React from 'react';
 import { Text } from 'react-native';
-import { kana } from '../constants/kana.js'
+import { kana } from '../constants/kana.js';
 
 export function KanaTable() {
+  const table = kana;
+  console.log(table);
 
-    const table = kana
-    console.log(table)
-
-    return (
-        <Text>KanaTable</Text>
-    )
-
+  return (
+    <Text>KanaTable</Text>
+  );
 }
