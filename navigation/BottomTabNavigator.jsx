@@ -44,5 +44,7 @@ function getHeaderTitle(route) {
       return 'How to get started';
     case 'Links':
       return 'Links to learn more';
+    default:
+      return `You shouldn't see this`;
   }
 }

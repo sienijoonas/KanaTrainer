@@ -1,4 +1,4 @@
-export const kana = {
+const kana = {
   a: {
     row: 'none',
     column: 'a',
@@ -249,4 +249,56 @@ export const kana = {
       char: 'ノ',
     },
   },
+  ha: {
+    row: 'h',
+    column: 'a',
+    hiragana: {
+      char: 'は',
+    },
+    katakana: {
+      char: 'ハ',
+    },
+  },
+  hi: {
+    row: 'h',
+    column: 'i',
+    hiragana: {
+      char: 'ひ',
+    },
+    katakana: {
+      char: 'ヒ',
+    },
+  },
+  fu: {
+    row: 'h',
+    column: 'u',
+    hiragana: {
+      char: 'ふ',
+    },
+    katakana: {
+      char: 'フ',
+    },
+  },
+  he: {
+    row: 'h',
+    column: 'e',
+    hiragana: {
+      char: 'へ',
+    },
+    katakana: {
+      char: 'ヘ',
+    },
+  },
+  ho: {
+    row: 'h',
+    column: 'o',
+    hiragana: {
+      char: 'ほ',
+    },
+    katakana: {
+      char: 'ホ',
+    },
+  },
 };
+
+export default kana;

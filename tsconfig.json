@@ -1,0 +1,11 @@
+{
+"compilerOptions": {
+    "module": "system",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "lib": ["dom","esnext"]
+},
+"exclude": ["node_modules", "**/*.spec.ts", "web-build"]
+}

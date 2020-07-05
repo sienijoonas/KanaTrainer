@@ -1,9 +1,6 @@
 import * as React from 'react';
-import {
-  Image, Platform, StyleSheet, Text, View,
-} from 'react-native';
+import { Image, Platform, StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-
 import { MonoText } from '../components/StyledText';
 import KanaTable from '../components/KanaTable';
 
@@ -13,23 +10,17 @@ export default function HomeScreen() {
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         <View style={styles.welcomeContainer}>
           <Image
-            source={
-              __DEV__
-                ? require('../assets/images/robot-dev.png')
-                : require('../assets/images/robot-prod.png')
-            }
+            source={__DEV__ ? require('../assets/images/robot-dev.png') : require('../assets/images/robot-prod.png')}
             style={styles.welcomeImage}
           />
         </View>
 
         <View style={styles.getStartedContainer}>
-
           <KanaTable />
 
           <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
             <MonoText>screens/HomeScreen.js</MonoText>
           </View>
-
         </View>
       </ScrollView>
 
