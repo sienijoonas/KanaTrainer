@@ -1,8 +1,11 @@
 /* eslint-disable no-console */
 
 import * as React from 'react';
+
 import KanaTableRow from './KanaTableRow';
-import { kana } from '../constants/kana';
+
+import kana from '../constants/kana';
+import { KanaType } from '../types/KanaType';
 
 const KanaTable: React.FC = (): React.ReactElement => {
   const rows = [];
@@ -11,33 +14,32 @@ const KanaTable: React.FC = (): React.ReactElement => {
   let currentRow;
 
   for (const [key, value] of Object.entries(kana)) {
-    console.log(`LOOP! key: ${key}, value.row: ${value.row}, value.column: ${value.column}`);
-
-    if (currentRow !== undefined && currentRow !== value.row) {
-      rows.push(rowCells);
-      rowCells = [];
-      console.log(`empty rowCells: ${rowCells}`);
-      currentRow = [];
-    }
-    console.log('rows:', rows);
-
-    const cell = {
+    const cellKana: KanaType = {
+      romaji: key,
       row: value.row,
       column: value.column,
       hiragana: value.hiragana.char,
       katakana: value.katakana.char,
     };
+    console.log(`${cellKana.romaji} ${cellKana.row}`);
 
-    console.log(cell);
+    if (currentRow !== undefined && currentRow !== value.row) {
+      console.log(key, 'vaihtuu', currentRow, rowCells, 'TYONTO!');
+      rows.push(rowCells);
+      rowCells = [];
+    }
 
-    rowCells.push(cell);
-
+    rowCells.push(cellKana);
     currentRow = value.row;
   }
+  rows.push(rowCells);
 
+  console.log('rows');
   console.log(rows);
 
-  return <KanaTableRow rows={rows} />;
+  const tableRows = rows.map((row, index) => <KanaTableRow row={row} key={index.toString()} />);
+
+  return <>{tableRows}</>;
 };
 
 export default KanaTable;

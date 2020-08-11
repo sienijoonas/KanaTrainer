@@ -26,14 +26,42 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'prettier'
   ],
   rules: {
     'no-use-before-define': 0,
-    // 'import/prefer-default-export': 0,
     'no-restricted-syntax': 0,
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'sort-imports': 2,
     'react/prop-types': 0,
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'sibling',
+          'parent',
+          'index',
+        ],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
+
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: true,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['all', 'single', 'multiple', 'none'],
+      },
+    ],
   },
   settings: {
     'import/resolver': {

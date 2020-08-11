@@ -5,7 +5,8 @@
     "noImplicitAny": true,
     "preserveConstEnums": true,
     "sourceMap": true,
-    "lib": ["dom","esnext"]
+    "lib": ["dom","esnext"],
+    "jsx": "preserve" 
 },
 "exclude": ["node_modules", "**/*.spec.ts", "web-build"]
 }
