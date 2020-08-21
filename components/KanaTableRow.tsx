@@ -11,7 +11,7 @@ type Props = {
 
 const styles = StyleSheet.create({
   row: {
-    width: 256,
+    width: 300,
     flexDirection: 'row',
     justifyContent: 'space-between',
     margin: 2,
@@ -26,7 +26,7 @@ const KanaTableRow: React.FC<Props> = ({ row }): React.ReactElement => {
       column={cell.column}
       hiragana={cell.hiragana}
       katakana={cell.katakana}
-      key={index.toString()}
+      key={cell.romaji}
     />
   ));
 

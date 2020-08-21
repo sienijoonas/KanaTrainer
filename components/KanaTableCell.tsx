@@ -3,26 +3,14 @@ import { StyleSheet, Text } from 'react-native';
 
 import { KanaType } from '../types/KanaType';
 
-const KanaTableCell: React.FC<KanaType> = ({
-  romaji,
-  row,
-  column,
-  hiragana,
-  katakana,
-}): React.ReactElement => {
-  return <Text style={styles.cell}>{hiragana}</Text>;
-};
-
 const styles = StyleSheet.create({
   cell: {
-    display: 'inline-block',
     backgroundColor: 'white',
-    borderColor: 'black',
     borderStyle: 'solid',
     borderWidth: 1,
     borderColor: 'hsl(197, 73%, 60%)',
-    borderRadius: 4,
-    padding: 4,
+    borderRadius: 5,
+    padding: 12,
     margin: 1,
     color: 'hsl(197, 73%, 30%)',
     fontSize: 25,
@@ -32,5 +20,15 @@ const styles = StyleSheet.create({
     textShadowRadius: 1,
   },
 });
+
+const KanaTableCell: React.FC<KanaType> = ({
+  romaji,
+  row,
+  column,
+  hiragana,
+  katakana,
+}): React.ReactElement => {
+  return <Text style={styles.cell}>{hiragana}</Text>;
+};
 
 export default KanaTableCell;
