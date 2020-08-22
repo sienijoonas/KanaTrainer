@@ -21,10 +21,10 @@ const KanaTable: React.FC = (): React.ReactElement => {
       hiragana: value.hiragana.char,
       katakana: value.katakana.char,
     };
-    console.log(`${cellKana.romaji} ${cellKana.row}`);
+    // console.log(`${cellKana.romaji} ${cellKana.row}`);
 
     if (currentRow !== undefined && currentRow !== value.row) {
-      console.log(key, 'vaihtuu', currentRow, rowCells, 'TYONTO!');
+      // console.log(key, 'vaihtuu', currentRow, rowCells, 'TYONTO!');
       rows.push(rowCells);
       rowCells = [];
     }
@@ -34,8 +34,8 @@ const KanaTable: React.FC = (): React.ReactElement => {
   }
   rows.push(rowCells);
 
-  console.log('rows');
-  console.log(rows);
+  // console.log('rows');
+  // console.log(rows);
 
   const tableRows = rows.map((row, index) => <KanaTableRow row={row} key={index.toString()} />);
 
